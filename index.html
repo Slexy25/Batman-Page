@@ -1,84 +1,188 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BatmanPage</title>
+
+    <!-- SEO -->
+    <meta
+        name="description"
+        content="Conheça o filme The Batman, assista ao trailer e descubra os personagens que fazem parte dessa história."
+    >
+    <meta name="theme-color" content="#000000">
+
+    <title>The Batman | Slexy</title>
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
+
+    <!-- ========== CABEÇALHO ========== -->
     <header>
-        <img id="logo" src="./imagens/Simbolo-Batman-removebg-preview.png">
-        <nav>
+        <img
+            id="logo"
+            src="./imagens/Simbolo-Batman-removebg-preview.png"
+            alt="Logo do Batman"
+            width="150"
+        >
+
+        <nav aria-label="Navegação principal">
             <ul>
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./contato.html">
-                    <li>Contato</li>
-                </a>
-                <a href="./fotos.html">
-                    <li>Fotos</li>
-                </a>
-                <a href="./comentarios.html">
-                    <li>Comentários</li>
-                </a>
+                <li>
+                    <a href="./index.html" aria-current="page">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./contato.html">
+                        Contato
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./fotos.html">
+                        Fotos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./comentarios.html">
+                        Comentários
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
-    <div id="banner"></div>
-    <div id="trailer-container">
-        <div class="content">
-            <video controls class="trailer">
-                <source src="./video/X2Download.app-Batman _  Teaser Trailer Legendado DC FanDome-(1080p).mp4"
-                    type="video/mp4">
-                Seu navegador nao possui suporte para videos
-            </video>
-            <div id="sinopse">
-                <p class="description">
-                    Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais
-                    sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a
-                    personificação da vingança para a população.
-                </p>
-                <button class="button">Comprar ingresso</button>
+
+    <!-- ========== CONTEÚDO PRINCIPAL ========== -->
+    <main>
+
+        <!-- Banner -->
+        <div id="banner" role="img"
+             aria-label="Banner do filme The Batman">
+        </div>
+
+        <!-- Trailer e sinopse -->
+        <section id="trailer-container"
+                 aria-label="Trailer e sinopse do filme">
+
+            <div class="content">
+
+                <video
+                    class="trailer"
+                    controls
+                    preload="metadata"
+                    playsinline
+                    aria-label="Trailer oficial de The Batman"
+                >
+                    <source
+                        src="./video/X2Download.app-Batman _  Teaser Trailer Legendado DC FanDome-(1080p).mp4"
+                        type="video/mp4"
+                    >
+
+                    Seu navegador não oferece suporte
+                    à reprodução de vídeos.
+                </video>
+
+                <div id="sinopse">
+
+                    <p class="description">
+                        Após dois anos espreitando as ruas
+                        como Batman, Bruce Wayne se encontra
+                        nas profundezas mais sombrias de
+                        Gotham City.
+
+                        Com poucos aliados confiáveis,
+                        o vigilante solitário se estabelece
+                        como a personificação da vingança
+                        para a população.
+                    </p>
+
+                    <button
+                        class="button"
+                        type="button"
+                        aria-label="Comprar ingresso para The Batman"
+                    >
+                        Comprar ingresso
+                    </button>
+
+                </div>
             </div>
-        </div>
+        </section>
 
-    </div>
-    
-    <div class="actor-cards-contariner">
-        <div class="cards-content">
-            <div class="card banner-1">Robert Pattinson - Batman</div>
-            <div class="card banner-2">Zoe Kravitz - Mulher Gato</div>
-            <div class="card banner-3">Jeffrey Wright - Gordon</div>
-        </div>
-    </div>
+        <!-- ========== PERSONAGENS ========== -->
+        <section
+            class="actor-cards-contariner"
+            aria-label="Elenco principal"
+        >
 
+            <div class="cards-content">
+
+                <div class="card banner-1">
+                    Robert Pattinson - Batman
+                </div>
+
+                <div class="card banner-2">
+                    Zoë Kravitz - Mulher-Gato
+                </div>
+
+                <div class="card banner-3">
+                    Jeffrey Wright - Gordon
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== RODAPÉ ========== -->
     <footer>
-        <img style="object-fit: contain;" id="logo" src="./imagens/Simbolo-Batman-removebg-preview.png">   
+
+        <img
+            class="footer-logo"
+            src="./imagens/Simbolo-Batman-removebg-preview.png"
+            alt="Logo do Batman"
+            width="150"
+            style="object-fit: contain;"
+            loading="lazy"
+        >
+
         <span>Todos os direitos reservados ©</span>
         <span>Desenvolvido por Slexy</span>
 
-        <nav class="footer-navigation">
+        <nav
+            class="footer-navigation"
+            aria-label="Navegação do rodapé"
+        >
             <ul class="footer-list">
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./contato.html">
-                    <li>Contato</li>
-                </a>
-                <a href="./fotos.html">
-                    <li>Fotos</li>
-                </a>
-                <a href="./comentarios.html">
-                    <li>Comentários</li>
-                </a>
+
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="./contato.html">Contato</a>
+                </li>
+
+                <li>
+                    <a href="./fotos.html">Fotos</a>
+                </li>
+
+                <li>
+                    <a href="./comentarios.html">
+                        Comentários
+                    </a>
+                </li>
+
             </ul>
         </nav>
+
     </footer>
-    
+
 </body>
 </html>
