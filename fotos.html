@@ -1,49 +1,113 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <meta
+        name="description"
+        content="Conheça o elenco e os personagens do filme The Batman."
+    >
+
+    <title>Elenco | The Batman</title>
+
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
+
+    <!-- Cabeçalho -->
     <header>
-        <img id="logo" src="./imagens/Simbolo-Batman-removebg-preview.png">
-        <nav>
+        <img
+            id="logo"
+            src="./imagens/Simbolo-Batman-removebg-preview.png"
+            alt="Logo do Batman"
+        >
+
+        <nav aria-label="Navegação principal">
             <ul>
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./contato.html">
-                    <li>Contato</li>
-                </a>
-                <a href="./fotos.html">
-                    <li>Fotos</li>
-                </a>
-                <a href="./comentarios.html">
-                    <li>Comentários</li>
-                </a>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="./contato.html">Contato</a>
+                </li>
+
+                <li>
+                    <a href="./fotos.html" aria-current="page">
+                        Fotos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./comentarios.html">
+                        Comentários
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
-    <div class="actor-cards-contariner">
-        <div class="cards-content">
-            <div class="card banner-1">Robert Pattinson - Batman</div>
-            <div class="card banner-2">Zoe Kravitz - Mulher Gato</div>
-            <div class="card banner-3">Jeffrey Wright - Gordon</div>
-            <div class="card banner-4">Paul Franklin Dano - Edward</div>
-            <div class="card banner-5">Jjohn Turturro - Falcone</div>
-            <div class="card banner-6">Colin Farrell - Oswald</div>
-            <div class="card banner-7">Jayme Lawson - Bella Reál</div>
-            <div class="card banner-8">Andy Serkys - Alfred</div>
-        </div>
-    </div>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section
+            class="actor-cards-contariner"
+            aria-label="Elenco de The Batman"
+        >
+
+            <div class="cards-content">
+
+                <div class="card banner-1">
+                    Robert Pattinson - Batman
+                </div>
+
+                <div class="card banner-2">
+                    Zoë Kravitz - Mulher-Gato
+                </div>
+
+                <div class="card banner-3">
+                    Jeffrey Wright - James Gordon
+                </div>
+
+                <div class="card banner-4">
+                    Paul Dano - Edward Nashton
+                </div>
+
+                <div class="card banner-5">
+                    John Turturro - Carmine Falcone
+                </div>
+
+                <div class="card banner-6">
+                    Colin Farrell - Oswald Cobblepot
+                </div>
+
+                <div class="card banner-7">
+                    Jayme Lawson - Bella Reál
+                </div>
+
+                <div class="card banner-8">
+                    Andy Serkis - Alfred Pennyworth
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
     <footer>
-        <img style="object-fit: contain;" id="logo" src="./imagens/Simbolo-Batman-removebg-preview.png">   
+        <img
+            class="footer-logo"
+            src="./imagens/Simbolo-Batman-removebg-preview.png"
+            alt="Logo do Batman"
+            style="object-fit: contain;"
+        >
+
         <span>Todos os direitos reservados ©</span>
         <span>Desenvolvido por Slexy</span>
-
+    </footer>
 
 </body>
 </html>
